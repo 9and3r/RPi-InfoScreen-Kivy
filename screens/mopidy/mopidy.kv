@@ -44,6 +44,7 @@
 
     BoxLayout:
         orientation: 'vertical'
+        spacing: 20
 
         ScreenManager:
             id: screen_manager
@@ -84,6 +85,7 @@
 
     BoxLayout:
         orientation: 'horizontal'
+        spacing: 20
 
         AsyncImage:
             id: image
@@ -98,14 +100,20 @@
             Label:
                 id: title
                 text: "No song"
+                font_size: self.parent.size[1]/3
+                text_size: self.size
 
             Label:
                 id: album
                 text: "No song"
+                font_size: self.parent.size[1]/3
+                text_size: self.size
 
             Label:
                 id: artist
                 text: "No song"
+                font_size: self.parent.size[1]/3
+                text_size: self.size
 
 <TracklistScreen>
     ListView:
